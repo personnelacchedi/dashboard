@@ -1,0 +1,47 @@
+
+.profile-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.profile-picture-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.profile-picture-preview img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.edit-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* Profile info (username, password, email, phone number) */
+.profile-info {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Input fields (visible in edit mode) */
+.MuiTextField-root {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+
+.choose-profile-picture-button {
+  margin-top: 10px;
+}
