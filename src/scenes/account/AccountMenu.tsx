@@ -17,6 +17,11 @@ const AccountMenu: React.FC<AccountMenuProps> = ({ username, avatarSrc }) => {
   const handleCloseMenu = () => {
     setAnchorEl(null);
   };
+  const handleLogout = () => {
+    // Perform any logout-related tasks here
+    // Then navigate to the desired URL using window.location.assign
+    window.location.assign('login.html');
+  };
 
   return (
     <>
@@ -38,7 +43,7 @@ const AccountMenu: React.FC<AccountMenuProps> = ({ username, avatarSrc }) => {
         <MenuItem component={Link} to="/settings" onClick={handleCloseMenu}>
           Settings
         </MenuItem>
-        <MenuItem onClick={handleCloseMenu}>
+        <MenuItem onClick={handleLogout}>
           Logout
         </MenuItem>
       </Menu>
